@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.3.0)
+  - Kingfisher (3.4.0)
+  - SnapKit (3.1.2)
+  - SwiftyJSON (3.1.4)
+  - XLProgressHUD (1.0.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.3.0)
+  - Kingfisher (~> 3.4.0)
+  - SnapKit (~> 3.1.2)
+  - SwiftyJSON (~> 3.1.4)
+  - XLProgressHUD (~> 1.0.5)
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Kingfisher: 5690cfb3d1bddf3a98d679a3a34d0b7294974ed2
+  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  XLProgressHUD: 43835d0404b2efdee052c25851eb082e2f98ca99
+
+PODFILE CHECKSUM: e3d17340177dbe936a1173e43139822229d240d9
+
+COCOAPODS: 1.2.0
