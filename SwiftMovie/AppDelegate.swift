@@ -16,6 +16,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.white
+        
+        let tabbarController = UITabBarController()
+        self.window?.rootViewController = tabbarController
+        
+        let homepageController = homepageViewController()
+        //一定要将homepageController作为UINavigationController的根视图
+        let hc = UINavigationController(rootViewController: homepageController)
+        //tabbarItem的标题
+        hc.tabBarItem.title = "首页"
+    
+        tabbarController.addChildViewController(hc)
+        
+        let categoryController = categoryViewController()
+        let cc = UINavigationController(rootViewController: categoryController)
+        cc.tabBarItem.title = "分类"
+        tabbarController.addChildViewController(cc)
+        
+        let discoveryController = discoveryViewController()
+        let dc = UINavigationController(rootViewController: discoveryController)
+        dc.tabBarItem.title = "发现"
+        tabbarController.addChildViewController(dc)
+        
+        let personalController = personalViewController()
+        let pc = UINavigationController(rootViewController: personalController)
+        pc.tabBarItem.title = "我的"
+        tabbarController.addChildViewController(pc)
+        
+        self.window?.makeKeyAndVisible()
+        
+        
+        
         return true
     }
 

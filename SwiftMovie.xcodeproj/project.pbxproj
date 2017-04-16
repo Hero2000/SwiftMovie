@@ -15,6 +15,10 @@
 		C412C9141EA3CBB100684C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C412C9121EA3CBB100684C76 /* LaunchScreen.storyboard */; };
 		C412C91F1EA3CBB100684C76 /* SwiftMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412C91E1EA3CBB100684C76 /* SwiftMovieTests.swift */; };
 		C412C92A1EA3CBB100684C76 /* SwiftMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412C9291EA3CBB100684C76 /* SwiftMovieUITests.swift */; };
+		C412C9381EA3D43000684C76 /* homepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412C9371EA3D43000684C76 /* homepageViewController.swift */; };
+		C412C93A1EA3D43E00684C76 /* categoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412C9391EA3D43E00684C76 /* categoryViewController.swift */; };
+		C412C93C1EA3D44E00684C76 /* discoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412C93B1EA3D44E00684C76 /* discoveryViewController.swift */; };
+		C412C93E1EA3D45E00684C76 /* personalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412C93D1EA3D45E00684C76 /* personalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		C412C9251EA3CBB100684C76 /* SwiftMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C412C9291EA3CBB100684C76 /* SwiftMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMovieUITests.swift; sourceTree = "<group>"; };
 		C412C92B1EA3CBB100684C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C412C9371EA3D43000684C76 /* homepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homepageViewController.swift; sourceTree = "<group>"; };
+		C412C9391EA3D43E00684C76 /* categoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoryViewController.swift; sourceTree = "<group>"; };
+		C412C93B1EA3D44E00684C76 /* discoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = discoveryViewController.swift; sourceTree = "<group>"; };
+		C412C93D1EA3D45E00684C76 /* personalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = personalViewController.swift; sourceTree = "<group>"; };
 		DB40E3578BC9005D85DDE834 /* Pods-SwiftMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMovie/Pods-SwiftMovie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +122,10 @@
 			children = (
 				C412C9091EA3CBB100684C76 /* AppDelegate.swift */,
 				C412C90B1EA3CBB100684C76 /* ViewController.swift */,
+				C412C9371EA3D43000684C76 /* homepageViewController.swift */,
+				C412C9391EA3D43E00684C76 /* categoryViewController.swift */,
+				C412C93B1EA3D44E00684C76 /* discoveryViewController.swift */,
+				C412C93D1EA3D45E00684C76 /* personalViewController.swift */,
 				C412C90D1EA3CBB100684C76 /* Main.storyboard */,
 				C412C9101EA3CBB100684C76 /* Assets.xcassets */,
 				C412C9121EA3CBB100684C76 /* LaunchScreen.storyboard */,
@@ -334,6 +346,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C412C93C1EA3D44E00684C76 /* discoveryViewController.swift in Sources */,
+				C412C93A1EA3D43E00684C76 /* categoryViewController.swift in Sources */,
+				C412C93E1EA3D45E00684C76 /* personalViewController.swift in Sources */,
+				C412C9381EA3D43000684C76 /* homepageViewController.swift in Sources */,
 				C412C90C1EA3CBB100684C76 /* ViewController.swift in Sources */,
 				C412C90A1EA3CBB100684C76 /* AppDelegate.swift in Sources */,
 			);
@@ -582,6 +598,7 @@
 				C412C9301EA3CBB100684C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C412C9311EA3CBB100684C76 /* Build configuration list for PBXNativeTarget "SwiftMovieTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +607,7 @@
 				C412C9331EA3CBB100684C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C412C9341EA3CBB100684C76 /* Build configuration list for PBXNativeTarget "SwiftMovieUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +616,7 @@
 				C412C9361EA3CBB100684C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
