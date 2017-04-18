@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F9B9059FD6E678F8F20D22A /* Pods_SwiftMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D23BF5142ED19573B9C5E2 /* Pods_SwiftMovie.framework */; };
+		4C83AA9B1EA5C7E00084EAD8 /* TestDic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C83AA9A1EA5C7E00084EAD8 /* TestDic.m */; };
+		4C83AA9F1EA5C9780084EAD8 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83AA9E1EA5C9780084EAD8 /* PersonInfo.swift */; };
 		C412C90A1EA3CBB100684C76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412C9091EA3CBB100684C76 /* AppDelegate.swift */; };
 		C412C90C1EA3CBB100684C76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C412C90B1EA3CBB100684C76 /* ViewController.swift */; };
 		C412C90F1EA3CBB100684C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C412C90D1EA3CBB100684C76 /* Main.storyboard */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C83AA981EA5C7DF0084EAD8 /* SwiftMovie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftMovie-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C83AA991EA5C7E00084EAD8 /* TestDic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDic.h; sourceTree = "<group>"; };
+		4C83AA9A1EA5C7E00084EAD8 /* TestDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDic.m; sourceTree = "<group>"; };
+		4C83AA9E1EA5C9780084EAD8 /* PersonInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		60D23BF5142ED19573B9C5E2 /* Pods_SwiftMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9048A58B37FDB7CF43DC81D6 /* Pods-SwiftMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMovie/Pods-SwiftMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		C412C9061EA3CBB100684C76 /* SwiftMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +128,10 @@
 			children = (
 				C412C9091EA3CBB100684C76 /* AppDelegate.swift */,
 				C412C90B1EA3CBB100684C76 /* ViewController.swift */,
+				4C83AA9E1EA5C9780084EAD8 /* PersonInfo.swift */,
 				C412C9371EA3D43000684C76 /* homepageViewController.swift */,
+				4C83AA991EA5C7E00084EAD8 /* TestDic.h */,
+				4C83AA9A1EA5C7E00084EAD8 /* TestDic.m */,
 				C412C9391EA3D43E00684C76 /* categoryViewController.swift */,
 				C412C93B1EA3D44E00684C76 /* discoveryViewController.swift */,
 				C412C93D1EA3D45E00684C76 /* personalViewController.swift */,
@@ -130,6 +139,7 @@
 				C412C9101EA3CBB100684C76 /* Assets.xcassets */,
 				C412C9121EA3CBB100684C76 /* LaunchScreen.storyboard */,
 				C412C9151EA3CBB100684C76 /* Info.plist */,
+				4C83AA981EA5C7DF0084EAD8 /* SwiftMovie-Bridging-Header.h */,
 			);
 			path = SwiftMovie;
 			sourceTree = "<group>";
@@ -232,6 +242,7 @@
 				TargetAttributes = {
 					C412C9051EA3CBB100684C76 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					C412C9191EA3CBB100684C76 = {
@@ -350,7 +361,9 @@
 				C412C93A1EA3D43E00684C76 /* categoryViewController.swift in Sources */,
 				C412C93E1EA3D45E00684C76 /* personalViewController.swift in Sources */,
 				C412C9381EA3D43000684C76 /* homepageViewController.swift in Sources */,
+				4C83AA9B1EA5C7E00084EAD8 /* TestDic.m in Sources */,
 				C412C90C1EA3CBB100684C76 /* ViewController.swift in Sources */,
+				4C83AA9F1EA5C9780084EAD8 /* PersonInfo.swift in Sources */,
 				C412C90A1EA3CBB100684C76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,11 +517,15 @@
 			baseConfigurationReference = 9048A58B37FDB7CF43DC81D6 /* Pods-SwiftMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftMovie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.com.SwiftMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftMovie/SwiftMovie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,11 +534,14 @@
 			baseConfigurationReference = DB40E3578BC9005D85DDE834 /* Pods-SwiftMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftMovie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.com.SwiftMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftMovie/SwiftMovie-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
